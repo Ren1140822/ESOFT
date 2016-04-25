@@ -24,10 +24,17 @@ public class ListaDemosExp {
         d.setDescricao(descricao);
     }
     public boolean validaDemo(){
-       return d.valida();
+       return d.valida()&&validaDemoGlobal();
     }
     public void registaDemo(){
        listaDemo.add(d);
     }
-   
+   public boolean validaDemoGlobal(){//nome diferente do SD para especificar melhor a validaçao local e global
+       for(Demonstracao d2 : listaDemo){
+           if(d.equals(d2)){
+               return false;
+           }
+       }
+       return true;
+   }
 }
