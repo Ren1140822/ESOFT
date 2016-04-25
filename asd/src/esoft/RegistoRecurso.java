@@ -35,4 +35,9 @@ public class RegistoRecurso {
     public void addRecurso(Recurso r){
         listaRecurso.add(r);
     }
+
+    public List<Recurso> getListaRecurso() {
+        return listaRecurso;
+    }
+    
 }

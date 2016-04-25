@@ -12,10 +12,11 @@ import java.util.List;
  * @author PRenato
  */
 public class Exposicao {
-    String titulo,descricao,local,periodo;
+    private String titulo,descricao,local,periodo;
     
-    ListaOrganizadores lo;
-    ListaFAE lf;
+    private static ListaOrganizadores lo = new ListaOrganizadores();
+    private static ListaFAE lf = new ListaFAE();
+    private static ListaDemosExp lde= new ListaDemosExp();
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -38,5 +39,8 @@ public class Exposicao {
     }
     public ListaFAE getListaFAE(){
         return lf;
+    }
+    public ListaDemosExp getListaDemonsExpo(){
+        return lde;
     }
 }

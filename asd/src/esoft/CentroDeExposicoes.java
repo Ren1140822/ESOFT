@@ -15,13 +15,13 @@ public class CentroDeExposicoes {
     private static RegistoUtilizador ru = new RegistoUtilizador();
     private static RegistoExposicao re = new RegistoExposicao();
     private static RegistoRecurso rr = new RegistoRecurso();
-    public static RegistoUtilizador getRegistoUtilizador(){
+    public  RegistoUtilizador getRegistoUtilizador(){
         return ru;
     }
-        public static RegistoExposicao getRegistoExposicao(){
+        public RegistoExposicao getRegistoExposicao(){
         return re;
     }
-    public static RegistoRecurso getRegistoRecurso(){
+    public RegistoRecurso getRegistoRecurso(){
         return rr;
     }
         
